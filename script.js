@@ -15,9 +15,9 @@ function setGradient(){
 setGradient();
 
 function setColor(){
-    let col1 = (Math.floor(Math.random() * 16777216)).toString(16);
+    let col1 = ((Math.floor(Math.random() * 16777216)).toString(16)).padStart(6,"8");
     color1.value = "#"+col1;
-    let col2 = (Math.floor(Math.random() * 16777216)).toString(16);
+    let col2 = ((Math.floor(Math.random() * 16777216)).toString(16)).padStart(6,"8");
     color2.value = "#"+col2;
     setGradient();
 }
